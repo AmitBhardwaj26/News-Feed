@@ -9,8 +9,8 @@ import ProfileGridview from "../../../components/ProfileGridview";
 import style1 from "../../../styles/gridview.module.css";
 import style2 from "../../../styles/icons.module.css";
 
-import GridViewIcon from '@mui/icons-material/GridView';
-import TableRowsIcon from '@mui/icons-material/TableRows';
+// import GridViewIcon from '@mui/icons-material/GridView';
+// import TableRowsIcon from '@mui/icons-material/TableRows';
 
 export default function Profile({ params }: any) {
 
@@ -58,10 +58,10 @@ export default function Profile({ params }: any) {
       {/* Render user details using the 'user' state */}
       <div className={style2.container}>
         <button className={style2.button} onClick={() => setView("grid")}>
-          <GridViewIcon /> Grid view
+           Grid view
         </button>
         <button className={style2.button} onClick={() => setView("list")}>
-          <TableRowsIcon /> List View
+          List View
         </button>
       </div>
 
