@@ -5,7 +5,6 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Showimgaes from "../components/Showimages";
 import Navbar from "../components/Navbar";
 
-
 export default function Mainpage() {
   const [imagess, setimagess] = useState([]);
   const [page, setPage] = useState(1);
@@ -41,10 +40,9 @@ export default function Mainpage() {
           </p>
         }
       >
-  
         {imagess.length &&
           imagess.map((image) => {
-            return <Showimgaes image={image} />;
+            return <Showimgaes key={image.id} image={image} />;
           })}
       </InfiniteScroll>
     </>
