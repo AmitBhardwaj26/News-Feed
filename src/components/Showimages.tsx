@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import styles from '../styles/mainpage.module.css'
 
 export default function Showimages({ image }: any) {
@@ -11,7 +12,14 @@ export default function Showimages({ image }: any) {
         <div className={styles.postheader}>
           <div >
             <a href={`/profile/${image.user.instagram_username}`}>
-              <img className={styles.profilepic} src={image.user.profile_image.large} alt={image.alt_description} />
+            <Image
+                src={image.user.profile_image.large}
+                alt={image.alt_description}
+                width={300}
+                height={200}
+                className={styles.profilepic}
+            /> 
+              {/* <img className={styles.profilepic} src={image.user.profile_image.large} alt={image.alt_description} /> */}
             </a>
           </div>
           <div>
@@ -21,7 +29,14 @@ export default function Showimages({ image }: any) {
           </div>  
         </div>
       <div>
-        <img className={styles.postpic} src={image.urls.regular} alt={image.alt_description} />
+      <Image
+                src={image.urls.regular}
+                alt={image.alt_description}
+                width={300}
+                height={200}
+                className={styles.postpic}
+            /> 
+        {/* <img  src={image.urls.regular} alt={image.alt_description} /> */}
           
       </div>
       <div>

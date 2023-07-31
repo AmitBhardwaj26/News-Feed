@@ -1,11 +1,19 @@
 "use client"
+import Image from "next/image";
 import styles from "../styles/profilepage.module.css";
 
 export default function Profilepage({ image }: any) {
   return (<>
     <div className={styles.container}>
       <div>
-        <img className={styles.profilepic} src={image.user.profile_image.large} alt={image.alt_description} />
+      <Image
+                src={image.user.profile_image.large}
+                alt={image.alt_description}
+                width={300}
+                height={200}
+                className={styles.profilepic}
+            /> 
+        {/* <img className={styles.profilepic} src={image.user.profile_image.large} alt={image.alt_description} /> */}
       </div>
       <div>
         <div>

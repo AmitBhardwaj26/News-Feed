@@ -43,7 +43,7 @@ export default function Profile({ params }: any) {
     if (username) {
       fetchUserPhotos();
     }
-  }, []);
+  }, [fetchUserPhotos, username]);
 
   return (
     <div>
@@ -70,7 +70,7 @@ export default function Profile({ params }: any) {
         <div className={style1.container}>
           {photos.length &&
             photos.map((photo) => {
-              return <ProfileGridview image={photo} />;
+              return <ProfileGridview key={photo.id} image={photo} />;
             })}
            
           {/* <Profilepage Photos={photos} /> */}
@@ -80,7 +80,7 @@ export default function Profile({ params }: any) {
         <div>
           {photos.length &&
             photos.map((photo) => {
-              return <Showimages image={photo} />;
+              return <Showimages key={photo.id} image={photo} />;
             })}
         </div>
       )}
