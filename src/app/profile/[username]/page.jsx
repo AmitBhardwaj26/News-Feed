@@ -12,13 +12,14 @@ import style2 from "../../../styles/icons.module.css";
 // import GridViewIcon from '@mui/icons-material/GridView';
 // import TableRowsIcon from '@mui/icons-material/TableRows';
 
-export default function Profile(params) {
+export default function Profile(props) {
   // const { router } = useRouter();
-  const username = params.username;
+  const username = props.params.username;
   console.log(username);
 
   const [photos, setPhotos] = useState([]);
   const [view, setView] = useState("grid"); // 'grid' or 'list'
+  const [Key, setKey] = useState(1);
 
   useEffect(() => {
     if (username) {
