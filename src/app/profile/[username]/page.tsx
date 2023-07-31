@@ -22,28 +22,25 @@ export default function Profile({ params }: any) {
   const [view, setView] = useState("grid"); // 'grid' or 'list'
 
 
-
-
-  const fetchUserPhotos = async () => {
-    try {
-      const response = await axios.get(
-         `https://api.unsplash.com/users/${username}/photos?client_id=OVC5HTXvmHs_4iDzfElRQ2fhRfD4Tn18m9eNZ1ob3KA`
-      );
-
-      const data = await response.data;
-      console.log(`data: ${data}`);
-      setPhotos(data);
-
-    } catch (error) {
-      console.error("Error fetching user photos:", error);
-    }
-  };
-
   useEffect(() => {
     if (username) {
+      const fetchUserPhotos = async () => {
+        try {
+          const response = await axios.get(
+             `https://api.unsplash.com/users/${username}/photos?client_id=OVC5HTXvmHs_4iDzfElRQ2fhRfD4Tn18m9eNZ1ob3KA`
+          );
+    
+          const data = await response.data;
+          console.log(`data: ${data}`);
+          setPhotos(data);
+    
+        } catch (error) {
+          console.error("Error fetching user photos:", error);
+        }
+      };
       fetchUserPhotos();
     }
-  }, [fetchUserPhotos, username]);
+  }, [username]);
 
   return (
     <div>
