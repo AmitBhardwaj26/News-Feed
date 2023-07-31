@@ -35,6 +35,13 @@
   right: 34px;
   top: 18px;
 }
+.toprighta {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  color: white;
+}
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
