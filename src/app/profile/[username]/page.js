@@ -12,8 +12,7 @@ import style2 from "../../../styles/icons.module.css";
 // import GridViewIcon from '@mui/icons-material/GridView';
 // import TableRowsIcon from '@mui/icons-material/TableRows';
 
-export default function Profile({ params }: any) {
-
+export default function Profile(params) {
   // const { router } = useRouter();
   const username = params.username;
   console.log(username);
@@ -21,19 +20,17 @@ export default function Profile({ params }: any) {
   const [photos, setPhotos] = useState([]);
   const [view, setView] = useState("grid"); // 'grid' or 'list'
 
-
   useEffect(() => {
     if (username) {
       const fetchUserPhotos = async () => {
         try {
           const response = await axios.get(
-             `https://api.unsplash.com/users/${username}/photos?client_id=OVC5HTXvmHs_4iDzfElRQ2fhRfD4Tn18m9eNZ1ob3KA`
+            `https://api.unsplash.com/users/${username}/photos?client_id=OVC5HTXvmHs_4iDzfElRQ2fhRfD4Tn18m9eNZ1ob3KA`
           );
-    
+
           const data = await response.data;
           console.log(`data: ${data}`);
           setPhotos(data);
-    
         } catch (error) {
           console.error("Error fetching user photos:", error);
         }
@@ -44,18 +41,15 @@ export default function Profile({ params }: any) {
 
   return (
     <div>
-      
       <Navbar />
       {/* <h1>{username ? username : "no username"}</h1> */}
-   
+
       {photos.length > 0 && <Profilepage image={photos[0]} />}
-      
-     
 
       {/* Render user details using the 'user' state */}
       <div className={style2.container}>
         <button className={style2.button} onClick={() => setView("grid")}>
-           Grid view
+          Grid view
         </button>
         <button className={style2.button} onClick={() => setView("list")}>
           List View
@@ -69,7 +63,7 @@ export default function Profile({ params }: any) {
             photos.map((photo) => {
               return <ProfileGridview key={photo.id} image={photo} />;
             })}
-           
+
           {/* <Profilepage Photos={photos} /> */}
         </div>
       ) : (
