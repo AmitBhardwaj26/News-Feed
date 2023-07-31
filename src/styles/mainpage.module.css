@@ -1,10 +1,10 @@
-/* styles/mainpage.module.css
+/* styles/mainpage.module.css */
 
 /* Container that holds each post */
 .container {
   display: flex;
   flex-direction: column;
-  height: 52rem;
+  height: auto; /* Change fixed height to 'auto' for responsiveness */
   align-items: center;
   margin-bottom: 2rem;
   border: 1px solid #ccc;
@@ -23,9 +23,26 @@
   margin-bottom: 0.5rem;
 }
 
+.profilepic {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #dd2ac5;
+  margin-bottom: 0.5rem;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .profilepic {
+    width: 3rem; /* Adjust profile picture size for smaller screens */
+    height: 3rem;
+    border: 1px solid #dd2ac5; /* Adjust border thickness for smaller screens */
+  }
+}
+
 .postpic {
-  width: 50rem;
-  height: 30rem;
+  width: 100%; /* Change fixed width to '100%' for responsiveness */
+  height: auto; /* Change fixed height to 'auto' for responsiveness */
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
@@ -41,9 +58,9 @@
 
 /* Main image */
 .mainimage {
-  /* width: 100%;
-    max-width: 800px;
-    height: auto; */
+  width: 100%; /* Change fixed width to '100%' for responsiveness */
+  max-width: 800px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -61,4 +78,20 @@
 
 .postheader {
   display: flex;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .postpic {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+
+  .username {
+    padding: 1rem; /* Reduce padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }

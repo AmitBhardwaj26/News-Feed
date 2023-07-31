@@ -13,32 +13,51 @@
 .navbarancher {
   color: white;
   display: inline-block;
-
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0 1rem;
   color: white;
 }
+
 .navbarul {
   display: flex;
-
   list-style-type: none;
 }
+
 .navbarulli {
   list-style: none;
   font-size: 1.2rem;
 }
+
 .topright {
   position: absolute;
   display: inline-block;
   right: 34px;
   top: 18px;
 }
-/* .toprighta {
-  
-} */
-.navbarlia:hover,
-.toprighta:hover {
-  color: #f44336;
-  transition: 0.5s;
+
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .navbarancher {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin: 0 0.5rem; /* Reduce margin for smaller screens */
+  }
+
+  .navbarul {
+    flex-direction: column; /* Stack the navigation items vertically for smaller screens */
+  }
+
+  .navbarulli {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin: 0.5rem 0; /* Add spacing between navigation items for smaller screens */
+  }
+
+  .topright {
+    right: 10px; /* Adjust the position of the top right items for smaller screens */
+    top: 10px;
+  }
 }

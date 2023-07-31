@@ -1,3 +1,4 @@
+/* Base styles for all screen sizes */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -43,51 +44,21 @@
   color: #333333;
 }
 
-/* #navbar {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
-} */
-/* 
-#navbar ul li a {
-  color: white;
-  display: inline-block;
-  text-decoration: none;
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
 
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0 1rem;
+  .card {
+    padding: 1rem;
+  }
+
+  .card img {
+    max-height: 150px;
+  }
 }
-#navbar ul {
-  display: flex;
-}
-#navbar ul li {
-  list-style: none;
-  font-size: 1.2rem;
-}
-.topright {
-  position: absolute;
-  display: inline-block;
-  right: 34px;
-  top: 22px;
-}
-.topright a {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-#navbar li a:hover,
-#navbar li a.active,
-.topright a:hover,
-.topright a.active {
-  color: #f44336;
-  transition: 0.5s;
-} */
+
+/* Add more media queries as needed for different screen sizes */
