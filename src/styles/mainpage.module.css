@@ -1,0 +1,64 @@
+/* styles/mainpage.module.css
+
+/* Container that holds each post */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 52rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+/* Profile picture */
+.profilepic {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #dd2ac5;
+  margin-bottom: 0.5rem;
+}
+
+.postpic {
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+/* Username */
+.username {
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* Main image */
+.mainimage {
+  /* width: 100%;
+    max-width: 800px;
+    height: auto; */
+  border-radius: 10px;
+}
+
+/* Likes and description */
+.likes {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+.postheader {
+  display: flex;
+}

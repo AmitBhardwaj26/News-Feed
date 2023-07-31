@@ -1,0 +1,93 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cardinfo {
+  text-align: center;
+}
+
+.cardlikes {
+  color: #eb4949;
+  font-weight: bold;
+}
+
+.carddescription {
+  color: #333333;
+}
+
+/* #navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
+} */
+/* 
+#navbar ul li a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.topright {
+  position: absolute;
+  display: inline-block;
+  right: 34px;
+  top: 22px;
+}
+.topright a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+#navbar li a:hover,
+#navbar li a.active,
+.topright a:hover,
+.topright a.active {
+  color: #f44336;
+  transition: 0.5s;
+} */

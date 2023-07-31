@@ -1,0 +1,26 @@
+/* styles/switchview.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: #f5f6f7;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #e1e3e5;
+}

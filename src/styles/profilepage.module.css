@@ -1,0 +1,72 @@
+/* styles/profilepage.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.posts {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.posts span {
+  font-weight: bold;
+}
+
+/* Center the elements inside the container */
+.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add some spacing between the elements */
+.container > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Add a border to separate the profile picture from the other details */
+.container > div:first-child {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+/* Adjust spacing for the profile picture and username */
+.container > div:first-child {
+  padding-top: 1rem;
+}
+
+/* Add hover effect to the profile picture */
+.profile-pic:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
