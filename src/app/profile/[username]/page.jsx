@@ -41,7 +41,7 @@ export default function Profile(props) {
   }, [username]);
 
   if(photos.length===0) {
-    setTimeout('', 2000);
+    setTimeout('', 4000);
       return (
          <>
           <Navbar />
