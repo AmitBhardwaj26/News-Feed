@@ -40,6 +40,18 @@ export default function Profile(props) {
     }
   }, [username]);
 
+  if(photos.length===0) {
+    setTimeout('', 2000);
+      return (
+         <>
+          <Navbar />
+         <div className={style1.notfoundcontainer}>
+          <h1 className={style1.notfoundcontainerh1}>User does not exist...</h1>
+          </div>
+         </>
+      );
+  }
+
   return (
     <div>
       <Navbar />

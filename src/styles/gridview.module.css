@@ -62,3 +62,19 @@
 }
 
 /* Add more media queries as needed for different screen sizes */
+
+.notfoundcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #f2f2f2;
+}
+
+.notfoundcontainerh1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 2rem;
+}
