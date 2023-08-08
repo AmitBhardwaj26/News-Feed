@@ -1,11 +1,13 @@
 /* styles/switchview.module.css */
 
+/* Container that holds the buttons */
 .container {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
 }
 
+/* Styling for the buttons */
 .button {
   display: flex;
   align-items: center;
@@ -21,18 +23,21 @@
   transition: background-color 0.2s ease;
 }
 
+/* Hover effect for the buttons */
 .button:hover {
   background-color: #e1e3e5;
 }
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  /* Stack the buttons vertically for smaller screens */
   .container {
-    flex-direction: column; /* Stack the buttons vertically for smaller screens */
+    flex-direction: column;
   }
 
+  /* Make the buttons occupy full width for smaller screens */
   .button {
-    width: 100%; /* Make the buttons occupy full width for smaller screens */
-    margin: 0.5rem 0; /* Add spacing between buttons for smaller screens */
+    width: 100%;
+    margin: 0.5rem 0;
   }
 }

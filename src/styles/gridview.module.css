@@ -8,6 +8,7 @@
   padding: 2rem;
 }
 
+/* Individual card styling */
 .card {
   display: flex;
   flex-direction: column;
@@ -19,10 +20,12 @@
   transition: transform 0.2s;
 }
 
+/* Hover effect for cards */
 .card:hover {
   transform: translateY(-5px);
 }
 
+/* Styling for card images */
 .card img {
   border-radius: 10px;
   width: 100%;
@@ -31,38 +34,45 @@
   margin-bottom: 1rem;
 }
 
+/* Styling for card information section */
 .cardinfo {
   text-align: center;
 }
 
+/* Styling for the number of likes */
 .cardlikes {
   color: #eb4949;
   font-weight: bold;
 }
 
+/* Styling for card description */
 .carddescription {
   color: #333333;
 }
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  /* Adjust grid layout for smaller screens */
   .container {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
     padding: 1rem;
   }
 
+  /* Adjust card padding for smaller screens */
   .card {
     padding: 1rem;
   }
 
+  /* Adjust card image height for smaller screens */
   .card img {
     max-height: 150px;
   }
 }
 
-/* Add more media queries as needed for different screen sizes */
+/* Additional media queries can be added for different screen sizes */
 
+/* Styling for the container when user is not found */
 .notfoundcontainer {
   display: flex;
   flex-direction: column;
@@ -72,6 +82,7 @@
   background-color: #f2f2f2;
 }
 
+/* Styling for the header in the not found container */
 .notfoundcontainerh1 {
   font-size: 2rem;
   font-weight: bold;

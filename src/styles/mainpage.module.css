@@ -23,15 +23,7 @@
   margin-bottom: 0.5rem;
 }
 
-.profilepic {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  border: 2px solid #dd2ac5;
-  margin-bottom: 0.5rem;
-}
-
-/* Media query for smaller screens (e.g., phones) */
+/* Styling for profile picture on smaller screens */
 @media only screen and (max-width: 768px) {
   .profilepic {
     width: 3rem; /* Adjust profile picture size for smaller screens */
@@ -40,6 +32,7 @@
   }
 }
 
+/* Styling for the main post image */
 .postpic {
   width: 100%; /* Change fixed width to '100%' for responsiveness */
   height: auto; /* Change fixed height to 'auto' for responsiveness */
@@ -47,7 +40,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Username */
+/* Username styling */
 .username {
   padding: 2rem;
   font-size: 1.2rem;
@@ -56,7 +49,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Main image */
+/* Main image styling */
 .mainimage {
   width: 100%; /* Change fixed width to '100%' for responsiveness */
   max-width: 800px;
@@ -64,34 +57,39 @@
   border-radius: 10px;
 }
 
-/* Likes and description */
+/* Likes and description styling */
 .likes {
   color: #ff6b6b;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
+/* Description styling */
 .description {
   color: #555555;
   margin-bottom: 1rem;
 }
 
+/* Styling for the post header */
 .postheader {
   display: flex;
 }
 
-/* Media query for smaller screens (e.g., phones) */
+/* Styling adjustments for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  /* Reduce padding for smaller screens */
   .container {
-    padding: 0.5rem; /* Reduce padding for smaller screens */
+    padding: 0.5rem;
   }
 
+  /* Adjust max-width for smaller screens */
   .postpic {
-    max-width: 100%; /* Adjust max-width for smaller screens */
+    max-width: 100%;
   }
 
+  /* Reduce padding and adjust font size for smaller screens */
   .username {
-    padding: 1rem; /* Reduce padding for smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 1rem;
+    font-size: 1rem;
   }
 }

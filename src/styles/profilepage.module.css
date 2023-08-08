@@ -1,5 +1,6 @@
 /* styles/profilepage.module.css */
 
+/* Container for the profile information */
 .container {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
   background-color: #fff;
 }
 
+/* Profile picture styling */
 .profilepic {
   width: 100px;
   height: 100px;
@@ -19,6 +21,7 @@
   margin-bottom: 1rem;
 }
 
+/* Username styling */
 .username {
   font-size: 1.5rem;
   font-weight: bold;
@@ -26,35 +29,38 @@
   margin-bottom: 0.5rem;
 }
 
+/* Full name styling */
 .name {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 0.5rem;
 }
 
+/* Total posts count styling */
 .posts {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 0.5rem;
 }
 
+/* Bold styling for the post count */
 .posts span {
   font-weight: bold;
 }
 
-/* Center the elements inside the container */
+/* Center the child elements inside the container */
 .container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Add some spacing between the elements */
+/* Add spacing between child elements */
 .container > div:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-/* Add a border to separate the profile picture from the other details */
+/* Styling for the divider between profile picture and other details */
 .container > div:first-child {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
@@ -73,21 +79,25 @@
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  /* Adjust padding for smaller screens */
   .container {
-    padding: 0.5rem; /* Reduce padding for smaller screens */
+    padding: 0.5rem;
   }
 
+  /* Adjust profile picture size for smaller screens */
   .profilepic {
-    width: 80px; /* Adjust profile picture size for smaller screens */
+    width: 80px;
     height: 80px;
   }
 
+  /* Adjust font size for smaller screens */
   .username {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    font-size: 1.2rem;
   }
 
+  /* Adjust font size for smaller screens */
   .name,
   .posts {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
   }
 }

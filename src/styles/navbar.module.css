@@ -1,3 +1,4 @@
+/* Navbar styling */
 .navbar {
   background-color: black;
   display: flex;
@@ -10,6 +11,7 @@
   opacity: 0.9;
 }
 
+/* Styling for navbar links */
 .navbarancher {
   color: white;
   display: inline-block;
@@ -19,22 +21,27 @@
   color: white;
 }
 
+/* Styling for navbar list */
 .navbarul {
   display: flex;
   list-style-type: none;
 }
 
+/* Styling for navbar list items */
 .navbarulli {
   list-style: none;
   font-size: 1.2rem;
 }
 
+/* Styling for the top right section */
 .topright {
   position: absolute;
   display: inline-block;
   right: 34px;
   top: 18px;
 }
+
+/* Styling for top right links */
 .toprighta {
   color: white;
   font-size: 1.2rem;
@@ -45,26 +52,31 @@
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  /* Adjust padding for smaller screens */
   .navbar {
-    padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
+    padding: 0.5rem 1rem;
   }
 
+  /* Adjust font size and margin for smaller screens */
   .navbarancher {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    margin: 0 0.5rem; /* Reduce margin for smaller screens */
+    font-size: 1rem;
+    margin: 0 0.5rem;
   }
 
+  /* Stack navigation items vertically for smaller screens */
   .navbarul {
-    flex-direction: column; /* Stack the navigation items vertically for smaller screens */
+    flex-direction: column;
   }
 
+  /* Adjust font size and margin for smaller screens */
   .navbarulli {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    margin: 0.5rem 0; /* Add spacing between navigation items for smaller screens */
+    font-size: 1rem;
+    margin: 0.5rem 0;
   }
 
+  /* Adjust position for top right items on smaller screens */
   .topright {
-    right: 10px; /* Adjust the position of the top right items for smaller screens */
+    right: 10px;
     top: 10px;
   }
 }
